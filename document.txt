@@ -1,0 +1,64 @@
+Resollect Finance Dashboard - Project Documentation
+1. Project Overview
+The Resollect Finance Dashboard is a web-based financial dashboard built using React.js. The application provides an interactive interface to manage and monitor financial data. It features a sidebar for navigation, a search bar, filtering options, and a structured table displaying financial details.
+The dashboard allows users to:
+Navigate through different sections using the sidebar.
+Search and filter financial records.
+View financial data in a grid-based table format.
+Upload documents through an interactive file upload option.
+
+2. Tech Stack & Dependencies
+Frontend Technologies:
+React.js - Used to build the UI and handle state management.
+CSS (Plain CSS or Tailwind CSS) - For styling and layout.
+Material-UI (Optional, for icons and table styling)
+Libraries Used:
+React Router (if implemented for navigation).
+React-Icons - For sidebar and UI icons.
+React-Filepond or Dropzone - For file uploads.
+React-Table / CSS Grid - To structure the financial data in a grid format.
+
+Project Folder Structure
+Since this project was implemented directly in App.js and App.css, the folder structure is minimal.
+/resollect-finance-dashboard
+│── /public
+│── /src
+│   │── index.js
+│   │── App.js
+│   │── App.css
+│── package.json
+│── README.md
+
+4. Application Flow & Components
+a) App.js (Main Component)
+This file contains the entire structure and logic of the dashboard. The key sections within App.js are:
+Sidebar Navigation: Contains links for navigating between different sections such as Dashboard, Portfolio, Notices, Notifications, Actions, Data Upload, Control Panel, User Management, and Permissions.
+Search Bar: Positioned above the filters, allowing users to search for specific financial records dynamically.
+Filters Section: Enables filtering by Loan Type.
+File Upload Section: Provides functionality to upload financial documents.
+Data Table: Displays financial details in a grid format, consisting of columns: Loan ID, Borrower, Loan Type, Sanction Amount, Region, Status
+b) App.css (Styling & Layout Management)
+The App.css file is responsible for the styling of the entire dashboard. It includes:
+Sidebar Styling: Manages the design and active state of the sidebar links.
+Grid-Based Table Layout: Ensures a structured display of financial data using CSS Grid or Flexbox.
+Button & Input Styling: Customizes the search bar, filter options, and file upload buttons.
+Theme Adjustments: Defines background colors, fonts, and UI responsiveness.
+
+5. Functionalities & Features
+a) Sidebar Navigation
+Displays options: Dashboard, Portfolio, Notices, Notifications, Actions, Data Upload, Control Panel, User Management, and Permissions.
+Highlights the currently selected option.
+b) Search Bar
+Allows users to search for financial records.
+Dynamically filters the displayed data based on user input.
+c) Filters Section
+Provides a dropdown or selection box to filter data based on Loan Type.
+Works in combination with the search bar for more precise filtering.
+d) File Upload
+Supports document uploads related to financial records.
+Uses React-Filepond or a simple input element for handling file selection.
+5. Data Table (Grid Layout)
+Displays 6 rows of financial data in a grid-based table.
+Columns: Loan ID, Borrower, Loan Type, Sanction Amount, Region, Status.
+Supports sorting and filtering functionalities.
+
